@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Brief</title>
+<style>
+  :root{
+    --ink:#2E2C27;
+    --body:#6B6A63;
+    --faint:#B4B3A8;
+    --hair:#E4E3DC;
+    --clay:#C6613F;
+    --band-top:#F9F9F7;
+    --band-bottom:#FCFCFB;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--band-bottom);
+    color:var(--body);
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-style:normal;
+    line-height:1.55;
+  }
+  a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--hair);text-underline-offset:2px;}
+  a:hover{text-decoration-color:var(--clay);}
+  .band{width:100%;}
+  .band-top{background:var(--band-top);border-bottom:1px solid var(--hair);}
+  .band-bottom{background:var(--band-bottom);}
+  .wrap{max-width:860px;margin:0 auto;padding:56px 24px;}
+  .wrap-tight{max-width:860px;margin:0 auto;padding:48px 24px 64px;}
+  .meta{
+    font-size:13px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--faint);
+    margin:0 0 18px;
+  }
+  h1.headline{
+    font-family:Georgia,'Times New Roman',serif;
+    font-style:normal;
+    font-weight:400;
+    font-size:40px;
+    line-height:1.2;
+    color:var(--ink);
+    margin:0 0 14px;
+  }
+  .sub{font-size:16px;color:var(--body);max-width:640px;margin:0;}
+  h2.section{
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink);
+    font-weight:600;
+    margin:0 0 18px;
+    padding-bottom:10px;
+    border-bottom:1px solid var(--hair);
+  }
+  .editions{margin-top:8px;}
+  .entry{
+    padding:22px 0;
+    border-bottom:1px solid var(--hair);
+  }
+  .entry:last-child{border-bottom:none;}
+  .entry a.date{
+    font-size:18px;
+    font-weight:600;
+    color:var(--ink);
+    text-decoration:none;
+  }
+  .entry a.date:hover{color:var(--clay);}
+  .entry p.desc{margin:6px 0 0;font-size:14px;color:var(--body);}
+  @media (max-width:640px){
+    .wrap,.wrap-tight{padding-left:18px;padding-right:18px;}
+    h1.headline{font-size:30px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="band band-top">
+  <div class="wrap">
+    <p class="meta">1 edition · latest: Saturday, 29 August 2026</p>
+    <h1 class="headline">Morning Brief</h1>
+    <p class="sub">A short daily read on Serbia and the Balkans, world affairs, markets, technology, science, automotive and sport.</p>
+  </div>
+</div>
+
+<div class="band band-bottom">
+  <div class="wrap-tight">
+    <h2 class="section">All Editions</h2>
+    <div class="editions">
+      <div class="entry">
+        <a class="date" href="briefs/2026-08-29.html">Saturday, 29 August 2026</a>
+        <p class="desc">Mladić Is Dead. The Balkans Are Already Fighting Over His Funeral.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
