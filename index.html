@@ -23,7 +23,7 @@
     font-style:normal;
     line-height:1.55;
   }
-  a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--hair);text-underline-offset:2px;}
+  a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--hair);text-underline-offset:3px;}
   a:hover{text-decoration-color:var(--clay);}
   .band{width:100%;}
   .band-top{background:var(--band-top);border-bottom:1px solid #E1E1DF;}
@@ -37,43 +37,47 @@
     color:var(--faint);
     margin:0 0 18px;
   }
-  h1.headline{
+  h1{
     font-family:Georgia,'Times New Roman',serif;
     font-style:normal;
     font-weight:400;
     font-size:40px;
     line-height:1.2;
     color:var(--ink);
-    margin:0 0 14px;
+    margin:0 0 20px;
   }
-  .sub{font-size:16px;color:var(--body);max-width:640px;margin:0;}
+  p.lede{font-size:15.5px;max-width:640px;margin:0;}
   h2.section{
     font-size:12px;
     letter-spacing:.14em;
     text-transform:uppercase;
     color:var(--ink);
     font-weight:600;
-    margin:0 0 18px;
+    margin:0 0 6px;
     padding-bottom:10px;
     border-bottom:1px solid var(--hair);
   }
-  .editions{margin-top:8px;}
   .entry{
     padding:22px 0;
     border-bottom:1px solid var(--hair);
   }
   .entry:last-child{border-bottom:none;}
-  .entry a.date{
-    font-size:18px;
+  .entry-date{
+    font-size:17px;
     font-weight:600;
     color:var(--ink);
-    text-decoration:none;
   }
-  .entry a.date:hover{color:var(--clay);}
-  .entry p.desc{margin:6px 0 0;font-size:14px;color:var(--body);}
+  .entry-desc{
+    margin:6px 0 0;
+    font-size:15.5px;
+    color:var(--body);
+  }
   @media (max-width:640px){
-    .wrap,.wrap-tight{padding-left:18px;padding-right:18px;}
-    h1.headline{font-size:30px;}
+    .wrap{padding:40px 18px;}
+    .wrap-tight{padding:36px 18px 56px;}
+    h1{font-size:29px;}
+    .entry-date{font-size:16px;}
+    .entry-desc{font-size:15px;}
   }
 </style>
 </head>
@@ -81,25 +85,27 @@
 
 <div class="band band-top">
   <div class="wrap">
-    <p class="meta">2 editions · latest: Monday, 31 August 2026</p>
-    <h1 class="headline">Morning Brief</h1>
-    <p class="sub">A short daily read on Serbia and the Balkans, world affairs, markets, technology, science, automotive and sport.</p>
+    <p class="meta">3 editions · Latest 2 September 2026</p>
+    <h1>Morning Brief</h1>
+    <p class="lede">A daily read of what actually matters — Serbia and the Balkans, the world, markets, technology, science, sport and the car industry — in the time it takes to drink a coffee.</p>
   </div>
 </div>
 
 <div class="band band-bottom">
   <div class="wrap-tight">
-    <h2 class="section">All Editions</h2>
-    <div class="editions">
+    <h2 class="section">All editions</h2>
       <div class="entry">
-        <a class="date" href="briefs/2026-08-31.html">Monday, 31 August 2026</a>
-        <p class="desc">The Fed Puts Rate Hikes Back on the Table</p>
+        <a class="entry-date" href="briefs/2026-09-02.html">Wednesday, 2 September 2026</a>
+        <p class="entry-desc">The Strait of Hormuz Sets Europe&#x27;s Inflation Rate</p>
       </div>
       <div class="entry">
-        <a class="date" href="briefs/2026-08-29.html">Saturday, 29 August 2026</a>
-        <p class="desc">Mladić Is Dead. The Balkans Are Already Fighting Over His Funeral.</p>
+        <a class="entry-date" href="briefs/2026-08-31.html">Monday, 31 August 2026</a>
+        <p class="entry-desc">The Fed Puts Rate Hikes Back on the Table</p>
       </div>
-    </div>
+      <div class="entry">
+        <a class="entry-date" href="briefs/2026-08-29.html">Saturday, 29 August 2026</a>
+        <p class="entry-desc">Mladić Is Dead. The Balkans Are Already Fighting Over His Funeral.</p>
+      </div>
   </div>
 </div>
 
