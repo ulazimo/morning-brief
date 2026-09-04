@@ -1,6 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Morning Brief</title>
@@ -23,30 +20,28 @@
     font-style:normal;
     line-height:1.55;
   }
-  a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--hair);text-underline-offset:3px;}
-  a:hover{text-decoration-color:var(--clay);}
   .band{width:100%;}
   .band-top{background:var(--band-top);border-bottom:1px solid #E1E1DF;}
   .band-bottom{background:var(--band-bottom);}
   .wrap{max-width:860px;margin:0 auto;padding:56px 24px;}
   .wrap-tight{max-width:860px;margin:0 auto;padding:48px 24px 72px;}
-  .meta{
+  .dateline{
     font-size:13px;
     letter-spacing:.08em;
     text-transform:uppercase;
     color:var(--faint);
     margin:0 0 18px;
   }
-  h1{
+  h1.headline{
     font-family:Georgia,'Times New Roman',serif;
     font-style:normal;
     font-weight:400;
     font-size:40px;
     line-height:1.2;
     color:var(--ink);
-    margin:0 0 20px;
+    margin:0 0 18px;
   }
-  p.lede{font-size:15.5px;max-width:640px;margin:0;}
+  p.lede{font-size:15.5px;max-width:720px;margin:0;}
   h2.section{
     font-size:12px;
     letter-spacing:.14em;
@@ -57,57 +52,65 @@
     padding-bottom:10px;
     border-bottom:1px solid var(--hair);
   }
-  .entry{
-    padding:22px 0;
+  a.edition{
+    display:block;
+    padding:20px 0;
     border-bottom:1px solid var(--hair);
+    text-decoration:none;
   }
-  .entry:last-child{border-bottom:none;}
-  .entry-date{
+  a.edition:last-child{border-bottom:none;}
+  .ed-date{
+    display:block;
     font-size:17px;
     font-weight:600;
     color:var(--ink);
+    line-height:1.35;
+    text-decoration:underline;
+    text-decoration-color:var(--hair);
+    text-underline-offset:3px;
   }
-  .entry-desc{
-    margin:6px 0 0;
+  a.edition:hover .ed-date{text-decoration-color:var(--clay);}
+  .ed-desc{
+    display:block;
     font-size:15.5px;
     color:var(--body);
+    margin-top:6px;
   }
   @media (max-width:640px){
     .wrap{padding:40px 18px;}
     .wrap-tight{padding:36px 18px 56px;}
-    h1{font-size:29px;}
-    .entry-date{font-size:16px;}
-    .entry-desc{font-size:15px;}
+    h1.headline{font-size:29px;}
+    .ed-date{font-size:16px;}
+    .ed-desc{font-size:15px;}
   }
 </style>
-</head>
-<body>
 
 <div class="band band-top">
   <div class="wrap">
-    <p class="meta">3 editions · Latest 2 September 2026</p>
-    <h1>Morning Brief</h1>
-    <p class="lede">A daily read of what actually matters — Serbia and the Balkans, the world, markets, technology, science, sport and the car industry — in the time it takes to drink a coffee.</p>
+    <p class="dateline">4 editions &middot; Latest Friday, 4 September 2026</p>
+    <h1 class="headline">Morning Brief</h1>
+    <p class="lede">A daily general-interest read on Serbia and the Balkans, the world, business and markets, technology, science, sport and the car industry &mdash; the things worth knowing if you only have a few minutes for the news.</p>
   </div>
 </div>
 
 <div class="band band-bottom">
   <div class="wrap-tight">
     <h2 class="section">All editions</h2>
-      <div class="entry">
-        <a class="entry-date" href="briefs/2026-09-02.html">Wednesday, 2 September 2026</a>
-        <p class="entry-desc">The Strait of Hormuz Sets Europe&#x27;s Inflation Rate</p>
-      </div>
-      <div class="entry">
-        <a class="entry-date" href="briefs/2026-08-31.html">Monday, 31 August 2026</a>
-        <p class="entry-desc">The Fed Puts Rate Hikes Back on the Table</p>
-      </div>
-      <div class="entry">
-        <a class="entry-date" href="briefs/2026-08-29.html">Saturday, 29 August 2026</a>
-        <p class="entry-desc">Mladić Is Dead. The Balkans Are Already Fighting Over His Funeral.</p>
-      </div>
+      <a class="edition" href="briefs/2026-09-04.html">
+        <span class="ed-date">Friday, 4 September 2026</span>
+        <span class="ed-desc">The War&#x27;s Inflation Bill Arrives in the Bond Market</span>
+      </a>
+      <a class="edition" href="briefs/2026-09-02.html">
+        <span class="ed-date">Wednesday, 2 September 2026</span>
+        <span class="ed-desc">The Strait of Hormuz Sets Europe&#x27;s Inflation Rate</span>
+      </a>
+      <a class="edition" href="briefs/2026-08-31.html">
+        <span class="ed-date">Monday, 31 August 2026</span>
+        <span class="ed-desc">The Fed Puts Rate Hikes Back on the Table</span>
+      </a>
+      <a class="edition" href="briefs/2026-08-29.html">
+        <span class="ed-date">Saturday, 29 August 2026</span>
+        <span class="ed-desc">Mladić Is Dead. The Balkans Are Already Fighting Over His Funeral.</span>
+      </a>
   </div>
 </div>
-
-</body>
-</html>
