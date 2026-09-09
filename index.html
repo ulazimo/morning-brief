@@ -25,7 +25,7 @@
   .band-bottom{background:var(--band-bottom);}
   .wrap{max-width:860px;margin:0 auto;padding:56px 24px;}
   .wrap-tight{max-width:860px;margin:0 auto;padding:48px 24px 72px;}
-  .dateline{
+  .meta{
     font-size:13px;
     letter-spacing:.08em;
     text-transform:uppercase;
@@ -39,7 +39,8 @@
     font-size:40px;
     line-height:1.2;
     color:var(--ink);
-    margin:0 0 18px;
+    margin:0 0 20px;
+    max-width:760px;
   }
   p.lede{font-size:15.5px;max-width:720px;margin:0;}
   h2.section{
@@ -52,69 +53,68 @@
     padding-bottom:10px;
     border-bottom:1px solid var(--hair);
   }
-  a.edition{
+  a.entry{
     display:block;
     padding:20px 0;
     border-bottom:1px solid var(--hair);
     text-decoration:none;
   }
-  a.edition:last-child{border-bottom:none;}
-  .ed-date{
+  a.entry:last-of-type{border-bottom:none;}
+  .entry-date{
     display:block;
-    font-size:17px;
+    font-size:16.5px;
     font-weight:600;
     color:var(--ink);
-    line-height:1.35;
     text-decoration:underline;
     text-decoration-color:var(--hair);
     text-underline-offset:3px;
+    margin-bottom:6px;
   }
-  a.edition:hover .ed-date{text-decoration-color:var(--clay);}
-  .ed-desc{
-    display:block;
-    font-size:15.5px;
-    color:var(--body);
-    margin-top:6px;
-  }
+  a.entry:hover .entry-date{text-decoration-color:var(--clay);}
+  .entry-desc{display:block;font-size:15px;color:var(--body);}
   @media (max-width:640px){
     .wrap{padding:40px 18px;}
     .wrap-tight{padding:36px 18px 56px;}
     h1.headline{font-size:29px;}
-    .ed-date{font-size:16px;}
-    .ed-desc{font-size:15px;}
+    .entry-date{font-size:15.5px;}
+    .entry-desc{font-size:14.5px;}
   }
 </style>
 
 <div class="band band-top">
   <div class="wrap">
-    <p class="dateline">5 editions &middot; Latest Monday, 7 September 2026</p>
+    <p class="meta">6 editions · latest 9 September 2026</p>
     <h1 class="headline">Morning Brief</h1>
-    <p class="lede">A daily general-interest read on Serbia and the Balkans, the world, business and markets, technology, science, sport and the car industry &mdash; the things worth knowing if you only have a few minutes for the news.</p>
+    <p class="lede">A short daily read on Serbia and the Balkans, world affairs, markets, technology, science, sport and the car industry — what actually matters, with sources.</p>
   </div>
 </div>
 
 <div class="band band-bottom">
   <div class="wrap-tight">
     <h2 class="section">All editions</h2>
-      <a class="edition" href="briefs/2026-09-07.html">
-        <span class="ed-date">Monday, 7 September 2026</span>
-        <span class="ed-desc">A Twenty-Six Point Far-Right Landslide, and Nobody Who Can Form a Government</span>
+      <a class="entry" href="briefs/2026-09-09.html">
+        <span class="entry-date">Wednesday, 9 September 2026</span>
+        <span class="entry-desc">The Gulf War Reaches Saudi Soil, and Brent Reaches for $100</span>
       </a>
-      <a class="edition" href="briefs/2026-09-04.html">
-        <span class="ed-date">Friday, 4 September 2026</span>
-        <span class="ed-desc">The War&#x27;s Inflation Bill Arrives in the Bond Market</span>
+      <a class="entry" href="briefs/2026-09-07.html">
+        <span class="entry-date">Monday, 7 September 2026</span>
+        <span class="entry-desc">A Twenty-Six Point Far-Right Landslide, and Nobody Who Can Form a Government</span>
       </a>
-      <a class="edition" href="briefs/2026-09-02.html">
-        <span class="ed-date">Wednesday, 2 September 2026</span>
-        <span class="ed-desc">The Strait of Hormuz Sets Europe&#x27;s Inflation Rate</span>
+      <a class="entry" href="briefs/2026-09-04.html">
+        <span class="entry-date">Friday, 4 September 2026</span>
+        <span class="entry-desc">The War&#x27;s Inflation Bill Arrives in the Bond Market</span>
       </a>
-      <a class="edition" href="briefs/2026-08-31.html">
-        <span class="ed-date">Monday, 31 August 2026</span>
-        <span class="ed-desc">The Fed Puts Rate Hikes Back on the Table</span>
+      <a class="entry" href="briefs/2026-09-02.html">
+        <span class="entry-date">Wednesday, 2 September 2026</span>
+        <span class="entry-desc">The Strait of Hormuz Sets Europe&#x27;s Inflation Rate</span>
       </a>
-      <a class="edition" href="briefs/2026-08-29.html">
-        <span class="ed-date">Saturday, 29 August 2026</span>
-        <span class="ed-desc">Mladić Is Dead. The Balkans Are Already Fighting Over His Funeral.</span>
+      <a class="entry" href="briefs/2026-08-31.html">
+        <span class="entry-date">Monday, 31 August 2026</span>
+        <span class="entry-desc">The Fed Puts Rate Hikes Back on the Table</span>
+      </a>
+      <a class="entry" href="briefs/2026-08-29.html">
+        <span class="entry-date">Saturday, 29 August 2026</span>
+        <span class="entry-desc">Mladić Is Dead. The Balkans Are Already Fighting Over His Funeral.</span>
       </a>
   </div>
 </div>
