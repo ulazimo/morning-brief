@@ -25,7 +25,7 @@
   .band-bottom{background:var(--band-bottom);}
   .wrap{max-width:860px;margin:0 auto;padding:56px 24px;}
   .wrap-tight{max-width:860px;margin:0 auto;padding:48px 24px 72px;}
-  .meta{
+  .dateline{
     font-size:13px;
     letter-spacing:.08em;
     text-transform:uppercase;
@@ -39,7 +39,7 @@
     font-size:40px;
     line-height:1.2;
     color:var(--ink);
-    margin:0 0 20px;
+    margin:0 0 16px;
     max-width:760px;
   }
   p.lede{font-size:15.5px;max-width:720px;margin:0;}
@@ -58,8 +58,9 @@
     padding:20px 0;
     border-bottom:1px solid var(--hair);
     text-decoration:none;
+    color:var(--body);
   }
-  a.entry:last-of-type{border-bottom:none;}
+  a.entry:last-child{border-bottom:none;}
   .entry-date{
     display:block;
     font-size:16.5px;
@@ -68,30 +69,34 @@
     text-decoration:underline;
     text-decoration-color:var(--hair);
     text-underline-offset:3px;
-    margin-bottom:6px;
+    margin-bottom:5px;
   }
   a.entry:hover .entry-date{text-decoration-color:var(--clay);}
-  .entry-desc{display:block;font-size:15px;color:var(--body);}
+  .entry-desc{display:block;font-size:15.5px;color:var(--body);}
   @media (max-width:640px){
     .wrap{padding:40px 18px;}
     .wrap-tight{padding:36px 18px 56px;}
     h1.headline{font-size:29px;}
     .entry-date{font-size:15.5px;}
-    .entry-desc{font-size:14.5px;}
+    .entry-desc{font-size:15px;}
   }
 </style>
 
 <div class="band band-top">
   <div class="wrap">
-    <p class="meta">8 editions &middot; latest 14 September 2026</p>
+    <p class="dateline">9 editions &middot; Latest Wednesday, 16 September 2026</p>
     <h1 class="headline">Morning Brief</h1>
-    <p class="lede">A short daily read on Serbia and the Balkans, world affairs, markets, technology, science, sport and the car industry &mdash; what actually matters, with sources.</p>
+    <p class="lede">A short daily read on Serbia and the Balkans, the world, markets, technology, science, sport and the car industry &mdash; what actually matters, with sources.</p>
   </div>
 </div>
 
 <div class="band band-bottom">
   <div class="wrap-tight">
     <h2 class="section">All editions</h2>
+      <a class="entry" href="briefs/2026-09-16.html">
+        <span class="entry-date">Wednesday, 16 September 2026</span>
+        <span class="entry-desc">The Bond Market Votes Before the Fed Does</span>
+      </a>
       <a class="entry" href="briefs/2026-09-14.html">
         <span class="entry-date">Monday, 14 September 2026</span>
         <span class="entry-desc">Both Ends of the Arabian Peninsula Are Now Closed</span>
