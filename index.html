@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Morning Brief</title>
@@ -25,7 +28,7 @@
   .band-bottom{background:var(--band-bottom);}
   .wrap{max-width:860px;margin:0 auto;padding:56px 24px;}
   .wrap-tight{max-width:860px;margin:0 auto;padding:48px 24px 72px;}
-  .dateline{
+  .meta{
     font-size:13px;
     letter-spacing:.08em;
     text-transform:uppercase;
@@ -58,40 +61,48 @@
     border-bottom:1px solid var(--hair);
     text-decoration:none;
   }
-  .entry:last-of-type{border-bottom:none;}
+  .entry:last-child{border-bottom:none;}
   .entry-date{
     display:block;
-    font-size:16px;
+    font-size:17px;
     font-weight:600;
     color:var(--ink);
     text-decoration:underline;
     text-decoration-color:var(--hair);
     text-underline-offset:3px;
-    margin-bottom:5px;
+    margin-bottom:6px;
   }
-  .entry:hover .entry-date{text-decoration-color:var(--clay);}
-  .entry-desc{display:block;font-size:15px;color:var(--body);}
+  .entry-desc{
+    display:block;
+    font-size:15.5px;
+    color:var(--body);
+  }
   @media (max-width:640px){
-    .wrap{padding:40px 18px;}
-    .wrap-tight{padding:36px 18px 56px;}
+    .wrap{padding:40px 20px;}
+    .wrap-tight{padding:36px 20px 56px;}
     h1{font-size:29px;}
-    .entry{padding:18px 0;}
-    .entry-date{font-size:15px;}
-    .entry-desc{font-size:14.5px;}
+    .entry-date{font-size:16px;}
+    .entry-desc{font-size:15px;}
   }
 </style>
+</head>
+<body>
 
 <div class="band band-top">
   <div class="wrap">
-    <p class="dateline">10 editions &middot; Latest: Friday, 18 September 2026</p>
+    <p class="meta">11 editions &middot; latest Monday, 21 September 2026</p>
     <h1>Morning Brief</h1>
-    <p class="lede">A short daily read on Serbia and the Balkans, the world, markets, technology, science, sport and the car industry &mdash; what actually matters, with the sources.</p>
+    <p class="lede">A short daily read on what actually happened: Serbia and the Balkans, world affairs, markets, technology, science, sport and the car industry &mdash; sourced, filtered and readable in a few minutes.</p>
   </div>
 </div>
 
 <div class="band band-bottom">
   <div class="wrap-tight">
     <h2 class="section">All editions</h2>
+      <a class="entry" href="briefs/2026-09-21.html">
+        <span class="entry-date">Monday, 21 September 2026</span>
+        <span class="entry-desc">A Weekend of Elections That Left Incumbents Weaker Everywhere but Moscow</span>
+      </a>
       <a class="entry" href="briefs/2026-09-18.html">
         <span class="entry-date">Friday, 18 September 2026</span>
         <span class="entry-desc">One Energy Shock, Three Central Banks, Three Different Answers</span>
@@ -134,3 +145,6 @@
       </a>
   </div>
 </div>
+
+</body>
+</html>
