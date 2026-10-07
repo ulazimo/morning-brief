@@ -23,6 +23,7 @@
     font-style:normal;
     line-height:1.55;
   }
+  a{color:var(--ink);text-decoration:none;}
   .band{width:100%;}
   .band-top{background:var(--band-top);border-bottom:1px solid #E1E1DF;}
   .band-bottom{background:var(--band-bottom);}
@@ -43,8 +44,9 @@
     line-height:1.2;
     color:var(--ink);
     margin:0 0 20px;
+    max-width:760px;
   }
-  .blurb{font-size:16.5px;max-width:720px;margin:0;}
+  .lede{font-size:16.5px;max-width:720px;margin:0;}
   h2.section{
     font-size:12px;
     letter-spacing:.14em;
@@ -55,31 +57,31 @@
     padding-bottom:10px;
     border-bottom:1px solid var(--hair);
   }
-  a.entry{
+  a.edition{
     display:block;
     padding:20px 0;
     border-bottom:1px solid var(--hair);
-    text-decoration:none;
   }
-  a.entry:last-child{border-bottom:none;}
-  .entry-date{
+  a.edition:last-child{border-bottom:none;}
+  .edition-date{
     display:block;
-    font-size:16px;
+    font-size:17px;
     font-weight:600;
     color:var(--ink);
-    text-decoration:underline;
-    text-decoration-color:var(--hair);
-    text-underline-offset:3px;
-    margin-bottom:5px;
+    line-height:1.35;
   }
-  a.entry:hover .entry-date{text-decoration-color:var(--clay);}
-  .entry-desc{display:block;font-size:15.5px;color:var(--body);}
+  .edition-desc{
+    display:block;
+    font-size:15.5px;
+    color:var(--body);
+    margin-top:5px;
+  }
+  a.edition:hover .edition-date{color:var(--clay);}
   @media (max-width:640px){
     .wrap{padding:40px 18px;}
     .wrap-tight{padding:36px 18px 56px;}
     h1{font-size:29px;}
-    .blurb{font-size:16px;}
-    .entry-desc{font-size:15px;}
+    .lede{font-size:16px;}
   }
 </style>
 </head>
@@ -87,82 +89,86 @@
 
 <div class="band band-top">
   <div class="wrap">
-    <p class="meta">17 editions &middot; Latest: Monday, 5 October 2026</p>
+    <p class="meta">18 editions &middot; latest Wednesday, 7 October 2026</p>
     <h1>Morning Brief</h1>
-    <p class="blurb">A short daily read on what actually matters: Serbia and the Balkans, world affairs, markets and the economy, technology, science, sport and the car industry &mdash; sourced, filtered and finished in a few minutes.</p>
+    <p class="lede">A short daily read on what actually happened: Serbia and the Balkans, the wider world, markets, technology, science, sport and the car industry &mdash; sourced, filtered and finished in a few minutes.</p>
   </div>
 </div>
 
 <div class="band band-bottom">
   <div class="wrap-tight">
     <h2 class="section">All editions</h2>
-      <a class="entry" href="briefs/2026-10-05.html">
-        <span class="entry-date">Monday, 5 October 2026</span>
-        <span class="entry-desc">A weekend of ballots, and a war council nobody announced</span>
+      <a class="edition" href="briefs/2026-10-07.html">
+        <span class="edition-date">Wednesday, 7 October 2026</span>
+        <span class="edition-desc">Kosovo bought a president with a war crimes court</span>
       </a>
-      <a class="entry" href="briefs/2026-10-02.html">
-        <span class="entry-date">Friday, 2 October 2026</span>
-        <span class="entry-desc">Diplomacy ends, a third carrier sails, and the bond market prices a longer war</span>
+      <a class="edition" href="briefs/2026-10-05.html">
+        <span class="edition-date">Monday, 5 October 2026</span>
+        <span class="edition-desc">A weekend of ballots, and a war council nobody announced</span>
       </a>
-      <a class="entry" href="briefs/2026-09-30.html">
-        <span class="entry-date">Wednesday, 30 September 2026</span>
-        <span class="entry-desc">Two AI labs, one day: a $2 trillion listing and a model too deceptive to ship</span>
+      <a class="edition" href="briefs/2026-10-02.html">
+        <span class="edition-date">Friday, 2 October 2026</span>
+        <span class="edition-desc">Diplomacy ends, a third carrier sails, and the bond market prices a longer war</span>
       </a>
-      <a class="entry" href="briefs/2026-09-28.html">
-        <span class="entry-date">Monday, 28 September 2026</span>
-        <span class="entry-desc">Vučić steps down to fight an election he cannot lose twice</span>
+      <a class="edition" href="briefs/2026-09-30.html">
+        <span class="edition-date">Wednesday, 30 September 2026</span>
+        <span class="edition-desc">Two AI labs, one day: a $2 trillion listing and a model too deceptive to ship</span>
       </a>
-      <a class="entry" href="briefs/2026-09-25.html">
-        <span class="entry-date">Friday, 25 September 2026</span>
-        <span class="entry-desc">Xi Comes to Washington, and AI Gets Its First Hotline</span>
+      <a class="edition" href="briefs/2026-09-28.html">
+        <span class="edition-date">Monday, 28 September 2026</span>
+        <span class="edition-desc">Vučić steps down to fight an election he cannot lose twice</span>
       </a>
-      <a class="entry" href="briefs/2026-09-23.html">
-        <span class="entry-date">Wednesday, 23 September 2026</span>
-        <span class="entry-desc">Threats by Day, Deals by Night, as the UN Week Opens in New York</span>
+      <a class="edition" href="briefs/2026-09-25.html">
+        <span class="edition-date">Friday, 25 September 2026</span>
+        <span class="edition-desc">Xi Comes to Washington, and AI Gets Its First Hotline</span>
       </a>
-      <a class="entry" href="briefs/2026-09-21.html">
-        <span class="entry-date">Monday, 21 September 2026</span>
-        <span class="entry-desc">A Weekend of Elections That Left Incumbents Weaker Everywhere but Moscow</span>
+      <a class="edition" href="briefs/2026-09-23.html">
+        <span class="edition-date">Wednesday, 23 September 2026</span>
+        <span class="edition-desc">Threats by Day, Deals by Night, as the UN Week Opens in New York</span>
       </a>
-      <a class="entry" href="briefs/2026-09-18.html">
-        <span class="entry-date">Friday, 18 September 2026</span>
-        <span class="entry-desc">One Energy Shock, Three Central Banks, Three Different Answers</span>
+      <a class="edition" href="briefs/2026-09-21.html">
+        <span class="edition-date">Monday, 21 September 2026</span>
+        <span class="edition-desc">A Weekend of Elections That Left Incumbents Weaker Everywhere but Moscow</span>
       </a>
-      <a class="entry" href="briefs/2026-09-16.html">
-        <span class="entry-date">Wednesday, 16 September 2026</span>
-        <span class="entry-desc">The Bond Market Votes Before the Fed Does</span>
+      <a class="edition" href="briefs/2026-09-18.html">
+        <span class="edition-date">Friday, 18 September 2026</span>
+        <span class="edition-desc">One Energy Shock, Three Central Banks, Three Different Answers</span>
       </a>
-      <a class="entry" href="briefs/2026-09-14.html">
-        <span class="entry-date">Monday, 14 September 2026</span>
-        <span class="entry-desc">Both Ends of the Arabian Peninsula Are Now Closed</span>
+      <a class="edition" href="briefs/2026-09-16.html">
+        <span class="edition-date">Wednesday, 16 September 2026</span>
+        <span class="edition-desc">The Bond Market Votes Before the Fed Does</span>
       </a>
-      <a class="entry" href="briefs/2026-09-11.html">
-        <span class="entry-date">Friday, 11 September 2026</span>
-        <span class="entry-desc">The Oil Shock Becomes a Rates Shock</span>
+      <a class="edition" href="briefs/2026-09-14.html">
+        <span class="edition-date">Monday, 14 September 2026</span>
+        <span class="edition-desc">Both Ends of the Arabian Peninsula Are Now Closed</span>
       </a>
-      <a class="entry" href="briefs/2026-09-09.html">
-        <span class="entry-date">Wednesday, 9 September 2026</span>
-        <span class="entry-desc">The Gulf War Reaches Saudi Soil, and Brent Reaches for $100</span>
+      <a class="edition" href="briefs/2026-09-11.html">
+        <span class="edition-date">Friday, 11 September 2026</span>
+        <span class="edition-desc">The Oil Shock Becomes a Rates Shock</span>
       </a>
-      <a class="entry" href="briefs/2026-09-07.html">
-        <span class="entry-date">Monday, 7 September 2026</span>
-        <span class="entry-desc">A Twenty-Six Point Far-Right Landslide, and Nobody Who Can Form a Government</span>
+      <a class="edition" href="briefs/2026-09-09.html">
+        <span class="edition-date">Wednesday, 9 September 2026</span>
+        <span class="edition-desc">The Gulf War Reaches Saudi Soil, and Brent Reaches for $100</span>
       </a>
-      <a class="entry" href="briefs/2026-09-04.html">
-        <span class="entry-date">Friday, 4 September 2026</span>
-        <span class="entry-desc">The War&#x27;s Inflation Bill Arrives in the Bond Market</span>
+      <a class="edition" href="briefs/2026-09-07.html">
+        <span class="edition-date">Monday, 7 September 2026</span>
+        <span class="edition-desc">A Twenty-Six Point Far-Right Landslide, and Nobody Who Can Form a Government</span>
       </a>
-      <a class="entry" href="briefs/2026-09-02.html">
-        <span class="entry-date">Wednesday, 2 September 2026</span>
-        <span class="entry-desc">The Strait of Hormuz Sets Europe&#x27;s Inflation Rate</span>
+      <a class="edition" href="briefs/2026-09-04.html">
+        <span class="edition-date">Friday, 4 September 2026</span>
+        <span class="edition-desc">The War&#x27;s Inflation Bill Arrives in the Bond Market</span>
       </a>
-      <a class="entry" href="briefs/2026-08-31.html">
-        <span class="entry-date">Monday, 31 August 2026</span>
-        <span class="entry-desc">The Fed Puts Rate Hikes Back on the Table</span>
+      <a class="edition" href="briefs/2026-09-02.html">
+        <span class="edition-date">Wednesday, 2 September 2026</span>
+        <span class="edition-desc">The Strait of Hormuz Sets Europe&#x27;s Inflation Rate</span>
       </a>
-      <a class="entry" href="briefs/2026-08-29.html">
-        <span class="entry-date">Saturday, 29 August 2026</span>
-        <span class="entry-desc">Mladić Is Dead. The Balkans Are Already Fighting Over His Funeral.</span>
+      <a class="edition" href="briefs/2026-08-31.html">
+        <span class="edition-date">Monday, 31 August 2026</span>
+        <span class="edition-desc">The Fed Puts Rate Hikes Back on the Table</span>
+      </a>
+      <a class="edition" href="briefs/2026-08-29.html">
+        <span class="edition-date">Saturday, 29 August 2026</span>
+        <span class="edition-desc">Mladić Is Dead. The Balkans Are Already Fighting Over His Funeral.</span>
       </a>
   </div>
 </div>
