@@ -23,7 +23,7 @@
     font-style:normal;
     line-height:1.55;
   }
-  a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--hair);text-underline-offset:3px;}
+  a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--hair);text-underline-offset:2px;}
   a:hover{text-decoration-color:var(--clay);}
   .band{width:100%;}
   .band-top{background:var(--band-top);border-bottom:1px solid #E1E1DF;}
@@ -45,8 +45,9 @@
     line-height:1.2;
     color:var(--ink);
     margin:0 0 20px;
+    max-width:760px;
   }
-  .lede{font-size:16.5px;max-width:720px;margin:0;}
+  p.intro{font-size:16.5px;max-width:720px;margin:0;}
   h2.section{
     font-size:12px;
     letter-spacing:.14em;
@@ -57,15 +58,22 @@
     padding-bottom:10px;
     border-bottom:1px solid var(--hair);
   }
-  .entry{padding:20px 0;border-bottom:1px solid var(--hair);}
+  .entry{
+    padding:20px 0;
+    border-bottom:1px solid var(--hair);
+  }
   .entry:last-child{border-bottom:none;}
-  a.edition{font-size:17px;font-weight:600;color:var(--ink);}
+  a.edition{
+    font-size:17px;
+    font-weight:600;
+    color:var(--ink);
+  }
   p.desc{margin:6px 0 0;font-size:15.5px;}
   @media (max-width:640px){
     .wrap{padding:40px 18px;}
     .wrap-tight{padding:36px 18px 56px;}
     h1{font-size:29px;}
-    .lede{font-size:16px;}
+    p.intro{font-size:16px;}
   }
 </style>
 </head>
@@ -73,15 +81,19 @@
 
 <div class="band band-top">
   <div class="wrap">
-    <p class="meta">19 editions &middot; latest Friday, 9 October 2026</p>
+    <p class="meta">20 editions &middot; latest Monday, 12 October 2026</p>
     <h1>Morning Brief</h1>
-    <p class="lede">A short general-interest briefing published most mornings: Serbia and the Balkans, world affairs, business and markets, technology, science, sport and the car industry &mdash; the few things worth knowing if you only spend a few minutes on the news.</p>
+    <p class="intro">A short general-interest briefing published every couple of days: Serbia and the Balkans, world affairs, markets and the economy, technology, science, sport and the car industry &mdash; the handful of things worth knowing, with sources.</p>
   </div>
 </div>
 
 <div class="band band-bottom">
   <div class="wrap-tight">
     <h2 class="section">All editions</h2>
+      <div class="entry">
+        <a class="edition" href="briefs/2026-10-12.html">Monday, 12 October 2026</a>
+        <p class="desc">Washington went to Moscow for diesel, and the Gulf kept burning</p>
+      </div>
       <div class="entry">
         <a class="edition" href="briefs/2026-10-09.html">Friday, 9 October 2026</a>
         <p class="desc">Washington postponed its war, and the weather took the oil anyway</p>
@@ -144,11 +156,11 @@
       </div>
       <div class="entry">
         <a class="edition" href="briefs/2026-09-04.html">Friday, 4 September 2026</a>
-        <p class="desc">The War's Inflation Bill Arrives in the Bond Market</p>
+        <p class="desc">The War&#x27;s Inflation Bill Arrives in the Bond Market</p>
       </div>
       <div class="entry">
         <a class="edition" href="briefs/2026-09-02.html">Wednesday, 2 September 2026</a>
-        <p class="desc">The Strait of Hormuz Sets Europe's Inflation Rate</p>
+        <p class="desc">The Strait of Hormuz Sets Europe&#x27;s Inflation Rate</p>
       </div>
       <div class="entry">
         <a class="edition" href="briefs/2026-08-31.html">Monday, 31 August 2026</a>
